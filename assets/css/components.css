@@ -52,6 +52,7 @@
 .card h3 {
   font-size: 1.2rem;
   color: var(--color-brand);
+    padding-top: 10px;
 }
 .card p {
   font-size: 1rem;
