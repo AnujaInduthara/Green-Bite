@@ -2,7 +2,7 @@
 /* Home page hero section */
 .hero {
   position: relative;
-  background: url(assets/images/hero-image.jpg) center/cover no-repeat;
+  background: url("/assets/images/hero-image.jpg") center/cover no-repeat;
   color: #fff;
   padding: var(--space-8) var(--space-6) var(--space-7) var(--space-6);
   min-height: 350px;
