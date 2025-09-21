@@ -1,0 +1,146 @@
+/* Component styles: navbar, hero, card, form, FAQ, footer, etc. */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-3) var(--space-7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.5px;
+  margin-right: var(--space-6);
+  font-family: var(--font-family);
+}
+.logo img {
+  height: 48px;
+  vertical-align: middle;
+}
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-5) var(--space-4);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all var(--transition-smooth);
+  gap: 4px;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-strong);
+}
+
+.card img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: var(--color-brand);
+}
+.card p {
+  font-size: 1rem;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.card button:hover {
+  transform: translateY(-2px);
+}
+
+.card .view-btn{
+  width: 100%;
+  margin-top: 4px;
+}
+
+.card-meta {
+  display: flex;
+  gap: var(--space-5);
+  margin: 0 var(--space-5);
+  font-size: 0.98rem;
+  color: var(--color-muted);
+  align-items: center;
+}
+.card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-meta .icon {
+  font-size: 1.1rem;
+}
+
+.card-image-container {
+  position: relative;
+}
+
+.card-category {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  color: var(--color-brand);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+  font-weight: bold;
+}
+
+.modal-recipe-image {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Scroll animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@media (max-width: var(--breakpoint-desktop)) {
+  .card img {
+    height: 180px;
+  }
+}

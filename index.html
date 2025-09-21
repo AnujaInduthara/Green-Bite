@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GreenBite promotes healthy living through balanced meals, exercise, and mindfulness. Discover recipes, calculate nutrition, generate workouts, and practice mindfulness."
+    />
+    <meta
+      name="keywords"
+      content="health, wellness, nutrition, recipes, workout, mindfulness, fitness"
+    />
+    <meta name="author" content="GreenBite Wellness" />
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#009C4D" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="GreenBite" />
+
+    <title>GreenBite Wellness - Healthy Living Made Simple</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/logo.png" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <!-- Responsive Navbar -->
+    <header id="navbar" aria-label="Primary" class="navbar">
+      <a href="index.html" class="logo" aria-label="GreenBite Home">
+        <img src="assets/images/logo.png" alt="GreenBite Logo" />
+      </a>
+      <button
+        class="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+        type="button"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu" role="menubar">
+        <li role="none">
+          <a role="menuitem" href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li role="none">
+          <a role="menuitem" href="recipes.html" class="nav-link"
+            >Healthy Recipes</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="calculator.html" class="nav-link"
+            >Calorie Calculator</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="workout.html" class="nav-link"
+            >Workout Generator</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="mindfulness.html" class="nav-link"
+            >Mindfulness</a
+          >
+        </li>
+        <li role="none">
+          <a role="menuitem" href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1 id="hero-quote">Welcome to GreenBite!</h1>
+        <p>
+          Promoting healthy living through balanced meals, exercise, and
+          mindfulness.
+        </p>
+      </div>
+    </section>
+    <!-- Health Tips -->
+    <section class="health-tips" aria-labelledby="daily-tip-title">
+      <span class="tip-icon" aria-hidden="true">💡</span>
+      <h2 id="daily-tip-title">Health Tip of the Day</h2>
+      <div class="tip-date-container">
+        <span
+          id="tip-of-the-day"
+          class="tip-of-the-day"
+          aria-live="polite"
+        ></span>
+        <span id="tip-date" class="tip-date"></span>
+      </div>
+    </section>
+
+    <!-- Feature Cards Section -->
+    <section class="feature-cards">
+      <div class="cards-grid">
+        <div class="card">
+          <img src="assets/images/images/healthy reci2.png" alt="Healthy Recipes" />
+          <h3>Healthy Recipes</h3>
+          <p>Discover delicious and nutritious recipes for every meal</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/images/health calculator.png" alt="Nutrition Calculator" />
+          <h3>Nutrition Calculator</h3>
+          <p>Calculate your daily calorie needs and macronutrient breakdown</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/images/workout1.png" alt="Workout Generator" />
+          <h3>Workout Generator</h3>
+          <p>Get personalized workout plans tailored to your goals</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/mindfulness.jpg" alt="Mindfulness Tools" />
+          <h3>Mindfulness Tools</h3>
+          <p>Practice mindfulness and meditation for mental well-being</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/progress.jpg" alt="Progress Tracking" />
+          <h3>Progress Tracking</h3>
+          <p>Track your health and fitness progress over time</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/community.jpg" alt="Community Support" />
+          <h3>Community Support</h3>
+          <p>Join our community for support, tips, and motivation</p>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter & Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img
+            src="assets/images/logo.png"
+            alt="GreenBite Logo"
+            class="footer-logo"
+          />
+          <p>
+            Promoting healthy living through balanced meals, exercise, and
+            mindfulness.
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><span>📘</span></a>
+            <a href="#" aria-label="TikTok"><span>🎵</span></a>
+            <a href="#" aria-label="Instagram"><span>📸</span></a>
+            <a href="#" aria-label="Telegram"><span>✈️</span></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="calculator.html">Calorie Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-resources">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="recipes.html">Nutrition Guide</a></li>
+            <li><a href="workout.html">Workout Library</a></li>
+            <li><a href="recipes.html">Meal Plans</a></li>
+            <li><a href="contact.html">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for healthy tips and recipes.</p>
+          <form id="newsletter-form">
+            <input
+              type="email"
+              id="newsletter-email"
+              required
+              placeholder="Enter your email"
+              autocomplete="email"
+            />
+            <button type="submit" class="btn-secondary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 GreenBite. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/main.js" defer></script>
+    <script>
+      // PWA Service Worker Registration
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").then(
+            function (registration) {
+              console.log("ServiceWorker registration successful");
+            },
+            function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            }
+          );
+        });
+      }
+    </script>
+  </body>
+</html>
