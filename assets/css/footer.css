@@ -46,31 +46,42 @@
 .footer-social a:hover {
   color: var(--color-brand-700);
 }
-.footer-links, .footer-resources {
+.footer-social svg {
+  width: 24px;
+  height: 24px;
+}
+.footer-links,
+.footer-resources {
   flex: 1 1 180px;
   min-width: 160px;
 }
-.footer-links h3, .footer-resources h3, .footer-newsletter h3 {
+.footer-links h3,
+.footer-resources h3,
+.footer-newsletter h3 {
   font-size: 1.08rem;
   font-weight: 700;
   margin-bottom: var(--space-2);
   color: var(--color-text);
 }
-.footer-links ul, .footer-resources ul {
+.footer-links ul,
+.footer-resources ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer-links ul li, .footer-resources ul li {
+.footer-links ul li,
+.footer-resources ul li {
   margin-bottom: 10px;
 }
-.footer-links ul li a, .footer-resources ul li a {
+.footer-links ul li a,
+.footer-resources ul li a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.2s;
 }
-.footer-links ul li a:hover, .footer-resources ul li a:hover {
+.footer-links ul li a:hover,
+.footer-resources ul li a:hover {
   color: var(--color-brand);
 }
 .footer-newsletter {
